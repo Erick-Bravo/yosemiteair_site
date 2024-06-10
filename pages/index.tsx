@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Img, Text } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,9 +25,10 @@ export default function Home() {
         padding="0 20px"
       >
         <Box fontSize="40px" fontFamily="sans-serif" fontWeight="bold">Yosemite Air</Box>
-        <Text fontSize="20px">Bringing fresh mountain air to all of the inland empire</Text>
+        <Text fontSize="20px">Heating and Air Conditioning Services for all of the Inland Empire</Text>
         <Box fontSize="40px">909 354 6272</Box>
       </Flex>
+      <Img src="./cuca.jpeg" w="100vw"/>
     </>
   );
 }
