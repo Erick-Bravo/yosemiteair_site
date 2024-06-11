@@ -4,10 +4,10 @@ interface BannerPropTypes {
   text: string;
 }
 
-const BannerText: React.FC<BannerPropTypes> = ({ text }) => {
+export const BannerText: React.FC<BannerPropTypes> = ({ text }) => {
   return (
     <Text
-      fontSize="45px"
+      fontSize={[15, 45]}
       fontWeight="bold"
       color="white"
       textAlign="center"
