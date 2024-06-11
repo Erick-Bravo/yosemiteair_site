@@ -1,10 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Box, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import NavBar from "@/components/Home/NavBar";
+import Banner from "@/components/Home/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 export default function Home() {
   return (
@@ -16,19 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex
-        bg="teal"
-        w="100vw"
-        h="80px"
-        justifyContent="space-between"
-        alignItems="center"
-        padding="0 20px"
-      >
-        <Box fontSize="40px" fontFamily="sans-serif" fontWeight="bold">Yosemite Air</Box>
-        <Text fontSize="20px">Heating and Air Conditioning Services for all of the Inland Empire</Text>
-        <Box fontSize="40px">909 354 6272</Box>
-      </Flex>
-      <Img src="./cuca.jpeg" w="100vw"/>
+      <NavBar />
+      {/* <Img src="./cuca.jpeg" w="100vw" /> */}
+
+    <Banner />
     </>
   );
 }
