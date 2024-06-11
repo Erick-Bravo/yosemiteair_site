@@ -3,7 +3,7 @@ import { Box, Text, Image, Button, Flex } from "@chakra-ui/react";
 const CallButton = () => {
   return (
     <Button bg="#213952" w="200px" h="60px" fontSize="30px" borderRadius="15px">
-      <a href="tel:019093546272">Call Now</a>
+      <a href="tel:9097676356">Call Now</a>
     </Button>
   );
 };
