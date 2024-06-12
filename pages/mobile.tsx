@@ -1,5 +1,6 @@
 import { BannerText } from "@/components/Home/Banner";
 import { Box, Text, Image, Button, Flex } from "@chakra-ui/react";
+import { PhoneIcon } from "@chakra-ui/icons";
 
 const CallButton = () => {
   return (
@@ -10,8 +11,9 @@ const CallButton = () => {
         h="60px"
         fontSize="30px"
         borderRadius="15px"
+        // textAlign="center"
       >
-        <a href="tel:9097676356">Call Now</a>
+        <a href="tel:9097676356"> Call Now</a>
       </Button>
     </Flex>
   );
@@ -41,9 +43,9 @@ const mobile = () => {
         <BannerText text="One Home At A Time" />
       </Flex>
 
-      <Box mt="30px">
+      <Flex mt="30px" justifyContent="space-around" alignItems="center">
         <CallButton />
-      </Box>
+      </Flex>
 
       <Text fontSize="20px" m="10px 0">
         Call For A Free Diagnosis
