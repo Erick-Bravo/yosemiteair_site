@@ -52,7 +52,7 @@ const mobile = () => {
       </Text>
 
       <Box bg="white" w="100%">
-        <Image src="/Professional.svg" alt="ad" />
+        <Image src="/ProfessionalUpdated.svg" alt="ad" />
       </Box>
     </Flex>
   );
