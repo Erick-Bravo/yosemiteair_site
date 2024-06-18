@@ -1,4 +1,4 @@
-import { BannerText } from "@/components/Home/Banner";
+import Banner, { BannerText } from "@/components/Home/Banner";
 import {
   Box,
   Text,
@@ -73,6 +73,45 @@ const BannerMobile = () => {
   );
 };
 
+const BannerGarauntee = () => {
+  return (
+    <Box
+      position="relative"
+      width="100%"
+      h="340px"
+      mt="40px"
+      backgroundImage="url('/protech.png')"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
+    >
+      <Flex
+        position="absolute"
+        top="0"
+        left="0"
+        width="100%"
+        h="100%"
+        bg="white"
+        justifyContent="center"
+        alignItems="center"
+        backgroundColor="rgba(0, 0, 0, 0.5)" // Adjust the opacity as needed
+      >
+        <Flex
+          w="100vw"
+          justifyContent="center"
+          alignItems="center"
+          h="100%"
+          flexDir="column"
+          p="40px 20px"
+        >
+          <BannerText text="Cheaper and more reliable than" />
+          <BannerText text="the corporate guys gauranteed" />
+        </Flex>
+      </Flex>
+    </Box>
+  );
+};
+
 const mobile = () => {
   return (
     <Flex
@@ -109,7 +148,7 @@ const mobile = () => {
         </List>
       </Box>
 
-      <Flex
+      {/* <Flex
         w="260px"
         flexDir="column"
         justifyContent="center"
@@ -118,7 +157,17 @@ const mobile = () => {
       >
         <BannerText text="Cheaper and more reliable than the corporate guys" />
         <BannerText text="gauranteed" />
+      </Flex> */}
+
+      <Flex mt="50px" alignItems="center">
+        <CallButton />
       </Flex>
+
+      <Text fontSize="20px" m="10px 0">
+        Call For A Free Diagnosis
+      </Text>
+
+      <BannerGarauntee />
 
       <Flex alignItems="center" flexDir="column">
         <Flex mt="50px" alignItems="center">
