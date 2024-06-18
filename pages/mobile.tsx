@@ -104,7 +104,7 @@ const BannerGarauntee = () => {
           flexDir="column"
           p="40px 20px"
         >
-          <BannerText text="Cheaper and more reliable than" />
+          <BannerText text="Better prices and more reliable than" />
           <BannerText text="the corporate guys gauranteed" />
         </Flex>
       </Flex>
